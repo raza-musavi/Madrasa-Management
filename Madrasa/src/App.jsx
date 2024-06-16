@@ -1,16 +1,13 @@
+import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
-import Announcements from "./components/Announcements";
-import ImageSlider from "./components/ImageSlider";
-import Footer from "./components/Footer";
-
+import { Outlet } from "react-router-dom";
 const App = () => {
   return (
     <div>
       <Banner />
       <Navbar />
-      <Announcements />
-      <ImageSlider />
+      <Outlet />
       <Footer />
     </div>
   );
